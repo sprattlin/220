@@ -1,6 +1,6 @@
 """
 Name: <Lindsay Spratt>
-<ProgramName>.py
+<hw1>.py
 
 Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
 This program solves math equations in everyday life and is able to interpret a wide variety of variables.
@@ -32,7 +32,6 @@ def coffee():
     pounds_coffee = eval(input("How many pounds of coffee would you like? : "))
     cost = (0.86 * (10.50 * pounds_coffee)) + 1.5
     print("Your total amount is $", cost)
-
 
 def kilometers_to_miles():
     kilometers = eval(input("How many kilometers did you drive?: "))
