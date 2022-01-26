@@ -26,7 +26,7 @@ def shooting_percentage():
     shots = eval(input("enter total shots: "))
     shots_made = eval(input("enter shots made: "))
     shooting_percentage = (shots_made / shots) * 100
-    print("shooting_percentage = ", shooting_percentage)
+    print("shooting_percentage: %", shooting_percentage)
 
 def coffee():
     pounds_coffee = eval(input("How many pounds of coffee would you like? : "))

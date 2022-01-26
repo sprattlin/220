@@ -1,0 +1,37 @@
+# if you want to test something, run the function by right clicking and hitting "run file in python console"
+# homework 2 has an outline, just replace "pass" with whatever your code is
+# to run test, right click on the test underneath on the assignment/homework
+#every time you're in a loop, the whole first body needs to finish before the code can come back to the top
+# "hello world" is a STRING data type
+# different data types allow you to do different things
+# with numbers, you can use the math library
+# numbers cannot be added to strings, only strings can be added to each other, and only numbers can be added to each other
+#when adding strings together it is called a concatenation
+# whole numbers are considered integer data types
+# numbers with decimals are called floats, this stands for "floating point"
+# the computer makes a distinction between integers and floats
+# it's easy to do arithmetic with integers, computer recognizes it easier
+# floats are roughly the estimate, or approximations because many decimals are never ending
+# when possible, use integers in your code
+# you can always check what data type you're working with, with the function "type"
+# / does floating point division // does integer division
+# "%" is a remainder or mod "modular arithmetic"
+# you can tell evens or odds with mod, if you mod a number and the answer is 0, it is even, if you get an answer of 1, it is even
+#mod is also useful for repeating
+# abs is a built in python function that gives the absolute power of something
+# import math function pulls up math functions
+#dot notation specifies the module of math formulas/code you want to pull up
+# like math.cos()
+# math.sqrt()
+# if you want to do a power of something use math.pow() with two numbers in the parentheses like 2,3 to signify 2 to the 3rd
+# the values in the parentheses are called the parameters or arguments
+# some functions have different amounts of parameters
+# range() finds the range of numbers
+# range can take up to three parameters (start, stop, step)
+# accumulator pattern
+
+
+
+
+
+
