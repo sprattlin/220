@@ -29,6 +29,7 @@
 # range() finds the range of numbers
 # range can take up to three parameters (start, stop, step)
 # accumulator pattern
+# indents are vital to loops
 
 
 
