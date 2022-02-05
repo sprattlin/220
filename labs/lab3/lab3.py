@@ -21,7 +21,7 @@ def traffic():
             cars_travelled = eval(input(" "))   # using eval to convert to int
             total_cars = cars_travelled + total_cars # average for vehicles per day
         all_roads = all_roads + total_cars # this accumulator will add together total vehicles travelled on all roads
-        print("Road",i, "average vehicles per day is: ", total_cars/days_surveyed) # average vehicles per day
+        print("Road",x, "average vehicles per day is: ", total_cars/days_surveyed) # average vehicles per day
     print("Total number of vehicles on all roads is ", all_roads) # total number of vehicles on all roads
     print("Average number of vehicles per road is ", all_roads/x) # average number of vehicles per road
 

@@ -1,46 +1,62 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: <Lindsay Spratt>
+<hw3>.py
 
 Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
-
+Running loops and sequences to solve everyday problems or advanced math.
 Certification of Authenticity:
 <include one of the following>
 I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
 
-
 def average():
+    pass
     value_count = eval(input("How many grades will you enter: "))    # variable input
     acc = 0
-    for i in range(value_count):
-        values = eval(input("Please enter your values: "))
-        for x in range(int(values)):         # second loop is not working corectly, check variables
-            acc = acc + (values + values)     # sum
-            grade_average = acc/value_count      # average
+    for grabbing_values in range(1, value_count + 1):
+        grade = eval(input("Please enter your values: "))
+        acc = acc + grade      # sum
+    grade_average = acc / value_count       # averaging values outside of loop
     print("Your average is", grade_average)
 
 def tip_jar():
-    tip_amount = eval(input("How much would you like to donate?: "))
-    acc = 0
-    for i in range(tip_amount, 5):
-       acc = sum((for i in range(tip_amount, 5)))
-
-
-
+    pass
+    acc = 0     # accumulator to add tips together
+    for entering_tips in range(5):      # range(5) because the bowl is being passed to exactly 5 people
+        tip_amount = eval(input("How much would you like to donate?: "))
+        acc = acc + tip_amount
+    print("Total tips: $", acc)
 
 def newton():
     pass
-
+    number_input = eval(input("What number do you want to square root? "))      # no acc because the user tells you how many times you want to refine
+    approximation_input = eval(input("How many times should we improve the approximation?  ")) # not accumulating any values
+    approx = number_input / 2
+    for run_approx in range(approximation_input):        # in range of approximation input bc user tells us how many times to run
+        approx = (approx + (number_input/approx)) / 2
+    print(approx)
 
 def sequence():
     pass
-
+    sequence_input = eval(input("How many terms would you like?"))
+    for series in range(1, sequence_input, + 1):
+        sequence_start = (series + 1) % 2
+    print(series + sequence_start)
 
 def pi():
-    pass
+    n = eval(input("Please enter how many terms are in the series: "))
+    acc = 1
+    num = 2
+    for i in range(n):
+       leftform = num/(num - 1)
+       rightform = num/(num + 1)
+       acc = acc * leftform * rightform
+       num = num + 2
+    pi = acc * 2
+    print(pi)
 
-
-if __name__ == '__main__':
     average()
+    tip_jar()
+    newton()
+    sequence()
+    pi()
