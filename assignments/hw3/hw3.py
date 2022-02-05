@@ -53,8 +53,8 @@ def pi():
     pi = acc * 2
     print(pi)
 if __name__ == '__main__':
-    #average()
-    #tip_jar()
-    #newton()
-    #sequence()
+    average()
+    tip_jar()
+    newton()
+    sequence()
     pi()
