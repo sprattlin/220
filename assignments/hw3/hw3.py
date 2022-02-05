@@ -45,18 +45,16 @@ def sequence():
 
 def pi():
     n = eval(input("Please enter how many terms are in the series: "))
-    acc = 1
-    num = 2
+    acc = 1   # acc 1 because multiplication
     for i in range(n):
-       leftform = num/(num - 1)
-       rightform = num/(num + 1)
-       acc = acc * leftform * rightform
-       num = num + 2
+       rightform = i + (2.0 - (i % 2.0))    # mod - remainder
+       leftform = i + (1.0 + (i % 2.0))
+       acc = acc * (rightform/leftform)
     pi = acc * 2
     print(pi)
-
-    average()
-    tip_jar()
-    newton()
-    sequence()
+if __name__ == '__main__':
+    #average()
+    #tip_jar()
+    #newton()
+    #sequence()
     pi()
