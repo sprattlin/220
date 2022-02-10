@@ -10,7 +10,7 @@ I certify that this assignment is entirely my own work.
 """
 from graphics import *
 
-def valentine():
+def greeting_card():
     # window creation
     width = 500
     height = 500
@@ -23,13 +23,13 @@ def valentine():
     heart_image.draw(win)
 
     # text 1 display
-    heart_pt = Point(width / 2, height - 10)
+    heart_pt = Point(10, 12)
     heart_message = Text(heart_pt, "Happy Valentine's Day!")
-    heart_message.setTextColor("red")
+    heart_message.setTextColor("black")
     heart_message.setFace("arial")
     heart_message.setStyle("bold italic")
     heart_message.setSize(20)
-    # heart_image.draw(win)
+    heart_message.draw(win)
 
     # arrow creation
     arrow = Image(Point(0, 10), "white arrow.gif")
@@ -49,4 +49,4 @@ def valentine():
     win.getMouse()
     win.close()
 
-valentine()
+greeting_card()
