@@ -72,25 +72,6 @@ def color_shape():
     shape = Circle(Point(win_width / 2, win_height / 2 - 30), 50)
     shape.draw(win)
 
-    # redTexPt is 50 pixels to the left and forty pixels down from center
-    # red_text_pt = Point(win_width / 2 - 50, win_height / 2 + 40)
-    # red_text = Text(red_text_pt, "Red: ")
-    # red_text.setTextColor("red")
-
-
-    # green_text_pt is 30 pixels down from red
-    # green_text_pt = red_text_pt.clone()
-    # green_text_pt.move(0, 30)
-    # green_text = Text(green_text_pt, "Green: ")
-    # green_text.setTextColor("green")
-
-
-    # blue_text_pt is 60 pixels down from red
-   # blue_text_pt = red_text_pt.clone()
-    # blue_text_pt.move(0, 60)
-    # blue_text = Text(blue_text_pt, "Blue: ")
-     # blue_text.setTextColor("blue")
-
     color_inputs = 5
     for i in range(color_inputs):
         red_text_pt = Point(win_width / 2 - 50, win_height / 2 + 40)
