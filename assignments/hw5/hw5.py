@@ -1,6 +1,6 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: <Lindsay Spratt>
+<hw5>.py
 
 Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
 
@@ -12,7 +12,8 @@ I certify that this assignment is my own work, but I discussed it with: <Name(s)
 
 
 def name_reverse():
-    pass
+    name = input("Please enter your name in first, last format: ")
+    
 
 
 def company_name():

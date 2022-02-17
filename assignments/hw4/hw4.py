@@ -117,7 +117,7 @@ def circle():
 
 def pi2():
     total = 0
-    num = int(input("Please enter the number of terms you would like to sum: "))
+    num = eval(input("Please enter the number of terms you would like to sum: "))
     for i in range(0, num, 2):
         total += ((1.0 / (i + i + 1)) - 1.0 / (i + i + 3))
     total = 4 * total

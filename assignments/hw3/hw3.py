@@ -39,7 +39,7 @@ def newton():
 def sequence():
     pass
     sequence_input = eval(input("How many terms would you like?"))
-    for series in range(1, sequence_input, + 1):
+    for series in range(1, sequence_input, + 1):    # + 1 at then end because stops are non-inclusive
         sequence_start = (series + 1) % 2
     print(series + sequence_start)
 
