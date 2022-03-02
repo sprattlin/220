@@ -1,5 +1,5 @@
 """
-Name: <your name goes here – first and last>
+Name: <Lindsay Spratt>
 <hw6>.py
 
 Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
