@@ -1,61 +1,42 @@
 """
-Name: <Lindsay Spratt>
-<hw8>.py
+Name: <your name goes here – first and last>
+<ProgramName>.py
 
 Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
-Using for loops, while loops, and if statements to run math equations and graphics.
+
 Certification of Authenticity:
 <include one of the following>
 I certify that this assignment is entirely my own work.
+I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
-
-import math
-from graphics import *
 
 
 def add_ten(nums):
-    nums[:] = [i + 10 for i in nums]
+    pass
 
 
 def square_each(nums):
-    nums[:] = [nums[i] ** 2 for i in nums]
-    return nums
+    pass
 
 
 def sum_list(nums):
-    acc = 0
-    for i in range(nums):
-        acc += nums[i]
-    return nums
+    pass
 
 
 def to_numbers(nums):
-    for i in nums:
-        int(i)
+    pass
 
 
-def sum_of_square(nums):
-    for i in nums:
-        int(i)
-    nums[:] = [nums[i] ** 2 for i in nums]
-    acc = 1
-    for i in range(nums):
-        acc += nums[i] ** 2
-    return nums
+def sum_of_squares(nums):
+    pass
 
 
 def starter(weight, wins):
-    if (150 <= weight < 160 and wins >= 5) or (weight > 199) or (wins > 20):
-        return True
-    else:
-        return False
+    pass
 
 
 def leap_year(year):
-    if (year % 4 == 0) and (year % 100 != 0) and (year % 400 == 0):
-        return True
-    else:
-        return False
+    pass
 
 
 def circle_overlap():
@@ -65,7 +46,7 @@ def circle_overlap():
     width = 10
     height = 10
     win.setCoords(0, 0, width, height)
-    # creating circle one
+
     center = win.getMouse()
     circumference_point = win.getMouse()
     radius = math.sqrt(
@@ -73,38 +54,12 @@ def circle_overlap():
     circle_one = Circle(center, radius)
     circle_one.setFill("light blue")
     circle_one.draw(win)
-    # creating circle two
-    center2 = win.getMouse()
-    circumference_point2 = win.getMouse()
-    radius2 = math.sqrt(
-        (center2.getX() - circumference_point2.getX()) ** 2 + (center2.getY() - circumference_point2.getY()) ** 2)
-    circle_two = Circle(center2, radius2)
-    circle_two.setFill("light green")
-    circle_two.draw(win)
-    if did_overlap(circle_one,circle_two):
-        print("The circles overlap")
-    else:
-        print("The circles do not overlap")
-    while not win.checkMouse():
-        print("Click to close")
-    else:
-        win.getMouse()
-    win.close()
+
+    win.getMouse()
 
 
 def did_overlap(circle_one, circle_two):
-    circle_overlap()
-    radius = circle_one.getRadius
-    radius2 = circle_two.getRadius
-    rad_sum = radius + radius2
-    center = circle_one.getCenter()
-    center2 = circle_two.getCenter()
-    distance_part1 = (center2.getX() - center.getX() ** 2) + (center2.getY() - center.getY() ** 2)
-    distance_final = math.sqrt(distance_part1)
-    if distance_final <= rad_sum:
-        return True
-    else:
-        return False
+    pass
 
 
 if __name__ == '__main__':
