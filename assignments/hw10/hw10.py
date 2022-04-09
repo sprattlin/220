@@ -5,7 +5,7 @@ Name: <Lindsay Spratt>
 Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
 Using while loops and if statements for math equations, and creating classes for
 Certification of Authenticity:
-I certify that this assignment is entirely my own work.
+I certify that this assignment is my own work, but I discussed it with Ashley Woods
 """
 from graphics import *
 from face import Face
@@ -13,29 +13,34 @@ from sphere import Sphere
 import math
 
 
-def fibonacci(n):
-    while n < 1:
+def fibonacci(n):   # 1, 1, 2, 3, 5, 8
+    if n < 1:
         return None
     else:
-        return fibonacci(n-1) + fibonacci(n-2)
+        acc = 1
+        acc += acc
 
 
-def double_investment(principle, rate):     # int object is not callable
-    n = 0
-    a = principle(n + (rate/100))
-    while a < (2 * a):
-        n += 1
-        return n
+def double_investment(principle, rate):  # int object is not callable
+    final_amount = principle
+    years = 0
+    while final_amount < 2 * principle:
+        years = years + 1
+        interest = final_amount * rate / 100.0
+        final_amount += interest
+        return years
 
 
 def syracuse(n):
-    syracuse_list = []
+    lst = []
     while n != 1:
+        lst.append(n)
         if n % 2 == 0:
-            syracuse_list.append(n / 2)
+            n = n // 2
         else:
-            syracuse_list.append((3 * n) + 1)
-    return syracuse_list
+            n = 3 * n + 1
+    lst.append(n)
+    return lst
 
 
 def goldbach(n):

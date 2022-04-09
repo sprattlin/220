@@ -3,10 +3,12 @@ from graphics import Circle, Line
 
 class Face:
     def __init__(self, window, center, size):
+        # dimensions
         eye_size = 0.15 * size
         eye_off = size / 3.0
-        mouth_size = 0.8 * size
-        mouth_off = size / 2.0
+        mouth_size = 0.9 * size
+        mouth_off = size / 1.5
+        # initializing
         self.window = window
         self.head = Circle(center, size)
         self.head.draw(window)
@@ -16,6 +18,7 @@ class Face:
         self.right_eye.move(eye_off, -eye_off)
         self.left_eye.draw(window)
         self.right_eye.draw(window)
+        #
         point_1 = center.clone()
         point_1.move(-mouth_size / 2, mouth_off)
         point_2 = center.clone()
@@ -27,8 +30,8 @@ class Face:
         size = self.head.getRadius()
         center = self.head.getCenter()
 
-        mouth_size = 0.8 * size
-        mouth_2 = size / 2.0
+        mouth_size = 0.9 * size
+        mouth_2 = size / 1.5
 
         point = center.clone()
         point.move(0, mouth_2 * 1.8)
@@ -54,14 +57,16 @@ class Face:
     def wink(self):
         center = self.head.getCenter()
         size = self.head.getRadius()
+
         eye_create = size / 3.0
         point = center.clone()
         point.move(-eye_create / 1.6, - eye_create)
         point_2 = center.clone()
         point_2.move(eye_create / 2, - eye_create)
+
         eye_shape = Line(point, point_2)
         eye_shape.move(- eye_create, 0)
         self.left_eye.undraw()
         self.left_eye = eye_shape
         eye_shape.draw(self.window)
-        self.smile(face)
+        self.smile()

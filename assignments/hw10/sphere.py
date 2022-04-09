@@ -13,8 +13,4 @@ class Sphere:
     def volume(self):
         return (4 / 3) * math.pi * (self.radius ** 3)
 
-    def main(self):
-        s = Sphere()
-        print("Radius of the sphere: ", s.get_radius())
-        print("Surface area: ", s.surface_area())
-        print("Volume: ", s.volume())
+
